@@ -1,0 +1,19 @@
+﻿<div class="pic-item">
+    <div>
+        <img data-bind="attr:{src:getUrl(),alt:getTitle()},click:imgClick" />
+    </div>
+    <div>
+        <div>
+            <strong>Title: </strong>
+            <span data-bind="text:getTitle()"></span>
+        </div>
+        <div>
+            <strong>Date: </strong>
+            <span data-bind="text:getDate()"></span>
+        </div>
+        <div>
+            <strong>Tags: </strong>
+            <span data-bind="text:getTags()"></span>
+        </div>
+    </div>
+</div>

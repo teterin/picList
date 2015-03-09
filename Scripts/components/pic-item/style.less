@@ -1,0 +1,36 @@
+﻿@import "../../../style.less";
+
+.break-words {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.pic-item {
+    .clearfix;
+    padding:10px;
+    &:nth-child(2n) {
+        background-color: #aaa;
+    }
+
+     &:nth-child(2n+1) {
+        background-color: #eee;
+    }
+
+    > div {
+        float: left;
+
+        &:first-child {
+            width: 240px;
+        }
+
+        &:last-child {
+            .break-words;
+            margin: 0 0 0 10px;
+            width: 300px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+}

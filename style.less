@@ -1,0 +1,65 @@
+﻿.clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        // Fixes Opera/contenteditable bug:
+        // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.fullScreenCover { 
+    background-color: #000;
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.fullScreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px 20px 0 0;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.container {
+    margin: 20px 0 0 20px;
+}
+
+.sortBar {
+    margin: 10px 0 0 0;
+}
